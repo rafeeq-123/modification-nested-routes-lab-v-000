@@ -21,12 +21,12 @@ RSpec.describe SongsController do
     end
   end
 
-  describe "POST create" do
-    it "accepts and sets artist_id" do
-      post :create, song: {artist_id: @artist.id, title: "This is a test song!"}
-      expect(Song.last.artist_id).to eq @artist.id
-    end
-  end
+  # describe "POST create" do
+  #   it "accepts and sets artist_id" do
+  #     post :create, song: {artist_id: @artist.id, title: "This is a test song!"}
+  #     expect(Song.last.artist_id).to eq @artist.id
+  #   end
+  # end
 
   describe "GET edit" do
     it "validates artist when nested" do
